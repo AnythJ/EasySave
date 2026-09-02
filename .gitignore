@@ -1,0 +1,7 @@
+credentials.json
+token_store/
+config.json
+bin/
+obj/
+.vs/
+*.user

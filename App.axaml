@@ -1,0 +1,103 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="EasySave.App"
+             RequestedThemeVariant="Dark">
+
+<!--    <Application.Resources>
+        <SolidColorBrush x:Key="BgBrush" Color="#1B1D22"/>
+        <SolidColorBrush x:Key="SurfaceBrush" Color="#24272E"/>
+        <SolidColorBrush x:Key="BorderBrush2" Color="#34383F"/>
+        <SolidColorBrush x:Key="TextPrimaryBrush" Color="#ECEAE5"/>
+        <SolidColorBrush x:Key="TextSecondaryBrush" Color="#9A9DA6"/>
+        <SolidColorBrush x:Key="AccentBrush" Color="#E8A33D"/>
+        <SolidColorBrush x:Key="AccentHoverBrush" Color="#F2B458"/>
+        <SolidColorBrush x:Key="SuccessBrush" Color="#6FCF97"/>
+        <SolidColorBrush x:Key="ErrorBrush" Color="#E5677A"/>
+    </Application.Resources>-->
+
+    <Application.Resources>
+        <SolidColorBrush x:Key="BgBrush" Color="#0F1420"/>
+        <SolidColorBrush x:Key="SurfaceBrush" Color="#171E2E"/>
+        <SolidColorBrush x:Key="BorderBrush2" Color="#2A3547"/>
+        <SolidColorBrush x:Key="TextPrimaryBrush" Color="#E4E9F2"/>
+        <SolidColorBrush x:Key="TextSecondaryBrush" Color="#7C8AA3"/>
+        <SolidColorBrush x:Key="AccentBrush" Color="#3D7FFF"/>
+        <SolidColorBrush x:Key="AccentHoverBrush" Color="#5C97FF"/>
+        <SolidColorBrush x:Key="SuccessBrush" Color="#4FBF8F"/>
+        <SolidColorBrush x:Key="ErrorBrush" Color="#E0667A"/>
+    </Application.Resources>
+
+    <Application.Styles>
+        <FluentTheme />
+
+        <Style Selector="Window">
+            <Setter Property="Background" Value="{StaticResource BgBrush}"/>
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+        </Style>
+
+        <Style Selector="TextBlock">
+            <Setter Property="Foreground" Value="{StaticResource TextPrimaryBrush}"/>
+        </Style>
+
+        <Style Selector="TextBlock.secondary">
+            <Setter Property="Foreground" Value="{StaticResource TextSecondaryBrush}"/>
+            <Setter Property="FontSize" Value="12"/>
+        </Style>
+
+        <Style Selector="TextBlock.mono">
+            <Setter Property="FontFamily" Value="Consolas"/>
+            <Setter Property="FontSize" Value="13"/>
+        </Style>
+
+        <Style Selector="Button">
+            <Setter Property="Background" Value="{StaticResource SurfaceBrush}"/>
+            <Setter Property="Foreground" Value="{StaticResource TextPrimaryBrush}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource BorderBrush2}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="CornerRadius" Value="4"/>
+            <Setter Property="Padding" Value="14,8"/>
+            <Setter Property="Cursor" Value="Hand"/>
+        </Style>
+
+        <Style Selector="Button:pointerover /template/ ContentPresenter">
+            <Setter Property="BorderBrush" Value="{StaticResource AccentBrush}"/>
+        </Style>
+
+        <Style Selector="Button.primary">
+            <Setter Property="Background" Value="{StaticResource AccentBrush}"/>
+            <Setter Property="Foreground" Value="#F5F8FF"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="BorderThickness" Value="0"/>
+        </Style>
+
+        <Style Selector="Button.primary:pointerover /template/ ContentPresenter">
+            <Setter Property="Background" Value="{StaticResource AccentHoverBrush}"/>
+        </Style>
+
+        <Style Selector="ComboBox">
+            <Setter Property="Background" Value="{StaticResource SurfaceBrush}"/>
+            <Setter Property="Foreground" Value="{StaticResource TextPrimaryBrush}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource BorderBrush2}"/>
+            <Setter Property="CornerRadius" Value="4"/>
+        </Style>
+
+        <Style Selector="TextBox">
+            <Setter Property="Background" Value="{StaticResource SurfaceBrush}"/>
+            <Setter Property="Foreground" Value="{StaticResource TextPrimaryBrush}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource BorderBrush2}"/>
+            <Setter Property="CornerRadius" Value="4"/>
+        </Style>
+
+        <Style Selector="ListBox">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+        </Style>
+
+        <Style Selector="ListBoxItem">
+            <Setter Property="Padding" Value="0"/>
+            <Setter Property="Margin" Value="0,0,0,6"/>
+            <Setter Property="CornerRadius" Value="4"/>
+        </Style>
+    </Application.Styles>
+
+</Application>
